@@ -8,7 +8,7 @@ class FlattenerTestCase(unittest.TestCase):
 
     # Remember, test methods must begin with the word "test."
     def test_case_1(self):
-        """When the input_filename is put through the get_uniques() 
+        """When the input_filename is passed to the get_uniques() 
         function, does the returned results_list match the 
         corresponding output_list_answer.json?"""
         
@@ -23,7 +23,7 @@ class FlattenerTestCase(unittest.TestCase):
         self.assertEqual(results_list1,right_answer1)
 
     def test_case_2(self):
-        """When the input_filename is put through the get_uniques() 
+        """When the input_filename is passed to the get_uniques() 
         function, does the returned results_list match the 
         corresponding output_list_answer.json?"""
         

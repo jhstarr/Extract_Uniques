@@ -6,8 +6,8 @@
 # Instructions:
 # Copy the data to de-dupe into a new google spreadsheet.
 # Save as csv called input_data_with_dupes<something>.csv and save into 
-# Projects/PRODUCTION_Data/Extract_uniques_data.  Run the program.  Copy results out of Output file
-# or drag into google sheets.
+# Projects/PRODUCTION_Data/Extract_uniques_data.  Run the program.  
+# Copy results out of Output file or drag into google sheets.
 
 import csv
 import json
@@ -18,13 +18,13 @@ from extract_unique_fn import get_uniques
 input_filename = os.path.expanduser(
     "~/Documents/Coding/Projects/" +
     "PRODUCTION_DATA/Extract_uniques_data/" +
-    "input_data_with_dupes_918.csv"
+    "input_data_with_dupes_file10.csv"
     )
 
 output_list_filename = os.path.expanduser(
     "~/Documents/Coding/Projects/" +
     "PRODUCTION_DATA/Extract_uniques_data/" +
-    "output_data_no_dupes_918.csv"
+    "output_data_no_dupes_file10.csv"
     )
 
 output_list = get_uniques(input_filename)
@@ -40,7 +40,8 @@ with open(output_list_filename, 'w', encoding='utf-8') as f_write:
 
 
 # The following writes the output_list as json to a file so that it can be
-# checked by a human then used for testing.
+# checked by a human then used for testing.  When you want to run a new test
+# case, uncomment and run this code then comment it back.
 
 """
 output_json_filename = os.path.expanduser(
