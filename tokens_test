@@ -1,0 +1,10 @@
+import nltk
+
+a = "The Walt Disney Company"
+b = "Disney"
+
+
+a_token = nltk.word_tokenize(a)
+b_token = nltk.word_tokenize(b)
+c = bool(set(a_token)&set(b_token))
+print(c)
