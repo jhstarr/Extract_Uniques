@@ -19,30 +19,29 @@ from find_contacts_at_companies_fn import find_contacts_at_companies
 input_companies_fname = os.path.expanduser(
     "~/Documents/Coding/Projects/" +
     "PRODUCTION_DATA/Find_Contacts_at_Companies_data/" +
-#    "input_data_companies_test1.csv"
+#    "input_data_companies_test2.csv"
     "input_data_companies_glmaster3Jul.csv"
-#    "input_data_companies_trunc.csv"
     )
 
 input_contacts_fname = os.path.expanduser(
     "~/Documents/Coding/Projects/" +
     "PRODUCTION_DATA/Find_Contacts_at_Companies_data/" +
-#    "input_data_contacts_test1.csv"
+#    "input_data_contacts_test2.csv"
     "input_data_contacts_cm.csv"
     )
 
 output_filename1 = os.path.expanduser(
     "~/Documents/Coding/Projects/" +
     "PRODUCTION_DATA/Find_Contacts_at_Companies_data/" +
-#    "output_data_contacts_at_companies_test1.csv"
-    "output_data_contacts_at_companies_glcm1.csv"
+#    "output_data_contacts_at_companies_test2.csv"
+    "output_data_contacts_at_companies_glcm2.csv"
     )
 
 output_filename2 = os.path.expanduser(
     "~/Documents/Coding/Projects/" +
     "PRODUCTION_DATA/Find_Contacts_at_Companies_data/" +
- #   "output_data_companies_with_contacts_test1.csv"
-    "output_data_companies_with_contacts_glcm1.csv"
+    "output_data_companies_with_contacts_test2.csv"
+ #   "output_data_companies_with_contacts_glcm2.csv"
     )
 
 
@@ -72,14 +71,14 @@ with open(output_filename2, 'w', encoding='utf-8') as f_write:
 """
 output_json_filename = os.path.expanduser(
     "~/Documents/Coding/Projects/github/" +
-    "Find_Contacts_at_Companies/test_files/output_contacts_answer1.json"
+    "Find_Contacts_at_Companies/test_files/output_contacts_answer2.json"
     )
 with open(output_json_filename, 'w') as outfile:
     json.dump(contacts_at_companies, outfile)
 
 output_json_filename = os.path.expanduser(
     "~/Documents/Coding/Projects/github/" +
-    "Find_Contacts_at_Companies/test_files/output_companies_answer1.json"
+    "Find_Contacts_at_Companies/test_files/output_companies_answer2.json"
     )
 with open(output_json_filename, 'w') as outfile:
     json.dump(companies_with_contacts, outfile)
